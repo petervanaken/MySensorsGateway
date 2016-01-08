@@ -558,6 +558,9 @@ void init()
 
     otaEnable();
 
+    // boost
+    System.setCpuFrequency(eCF_160MHz);
+
     // Run WEB server on system ready
     System.onReady(startServers);
 }
